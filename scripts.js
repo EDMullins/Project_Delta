@@ -134,9 +134,17 @@ class FlowRunner {
   // GOOD flow: one clear close and one visible skip timer
   showGoodScreen(){
     const screen = element('div',{class:'ad-screen'}, element('div',{html:'<h3>Sponsored</h3><p>Play now</p>'}));
-    // prominent close button
+    // prominent skip button
     const skip = element('button',{class: 'skip-button'}, 'Skip in 3');
+    const downloadBtn = element('button',{}, 'Download');
+    downloadBtn.addEventListener('click', () => {
+      this.recordClick();
+      this.end();
+      //print final screen and show clicks and time
+      this.root.innerHTML = `<div class="ad-screen"><div>Simulated install path — flow ended</div><div>Clicks: ${this.clicks}</div><div>Time: ${Math.round(performance.now() - this.startTime)} ms</div></div>`;
+    });
     screen.appendChild(skip);
+    screen.appendChild(downloadBtn);
     this.root.appendChild(screen);
 
     // countdown then enable skip
