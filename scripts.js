@@ -71,7 +71,7 @@ class FlowRunner {
       t--;
       if(t <= 0){
         clearInterval(interval);
-        store.textContent = '>> Open Store';
+        store.innerHTML = '<i class="bi bi-skip-forward"></i> Open Store';
         store.style.backgroundColor = 'rgba(60, 60, 60, 0.6)';
         store.addEventListener('click', () => {
           this.recordClick();
@@ -152,7 +152,7 @@ class FlowRunner {
       t--;
       if(t <= 0){
         clearInterval(interval);
-        skip.textContent = 'Skip >>';
+        skip.innerHTML = 'Skip <i class="bi bi-skip-forward"></i>';
         skip.addEventListener('click', () => {
           this.recordClick();
           this.end();
