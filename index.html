@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project Delta</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Why Do Ads Suck?</h1>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <section class="card text-area">
+        <h2>The Problem with Mobile Game Ads</h2>
+        <p>+ Have you ever tried to close an ad in a mobile game, only to tap through several screens before finally returning to your game? Many ads are intentionally designed to make exiting confusing.</p>
+        <ul>
+          <li>tiny “X” buttons</li>
+          <li>fake close icons</li>
+          <li>and extra pop-ups that remove you from the game</li>
+        </ul>
+        <p>+ These unnecessary steps waste time and frustrate users. Each extra click and delay breaks the flow of gameplay and goes against core design principles like <strong>clarity, efficiency, and user control</strong>.</p>
+        <p>+ This project demonstrates that problem by showing:</p>
+        <ul>
+          <li>a <em>BAD AD FLOW</em> with multiple screens to exit</li>
+          <li>an improved <em>GOOD AD FLOW</em> that allows users to skip or close the ad quickly and confidently</li>
+        </ul>
+        <p>+ <strong>Goal:</strong> Reduce clicks, shorten time to exit, and make ad interactions more transparent and user-friendly.</p>
+      </section>
+
+      <section class="card">
+        <h2>Bad flow (3 screens)</h2>
+        <div id="bad-ad-root" class="ad-root"></div>
+        <div class="controls">
+          <button id="start-bad">Start Bad Ad</button>
+          <button id="reset-bad" aria-label="Reset bad flow">Reset</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Improved flow (1 screen)</h2>
+        <div id="good-ad-root" class="ad-root"></div>
+        <div class="controls">
+          <button id="start-good">Start Improved Ad</button>
+          <button id="reset-good" aria-label="Reset good flow">Reset</button>
+        </div>
+      </section>
+
+      <footer class="card footer">
+        <p>Repo: <a href="https://github.com/EDMullins/Project_Delta" target="_blank">view source code</a> • Profile: <a href="https://github.com/EDMullins" target="_blank">view dev profile</a> • A11Y: <a href="" target="_blank">Nu</a>, <a href="" target="_blank">Wave</a></p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
