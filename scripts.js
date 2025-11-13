@@ -1,4 +1,3 @@
-// app.js (ES module)
 const badRoot = document.getElementById('bad-ad-root');
 const goodRoot = document.getElementById('good-ad-root');
 const startBad = document.getElementById('start-bad');
